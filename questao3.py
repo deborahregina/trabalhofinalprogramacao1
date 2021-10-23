@@ -10,12 +10,12 @@ while (progranaOn):
     listaJogo = [['*', '*', '-', 'G'], ['R', '-', '*', '*']]
     print("em qual posição quer alocar o RATO?")
     i = int(input())
-    if i == 3:
+    if i == 3:  # Única posição que o rato não pode estar
         frasefinal = "você perdeu!"
     print("em qual posição quer alocar o GATO?")
     j = int(input())
 
-    if j == 6:
+    if j == 6:  # Aqui o gato não pode estar
         frasefinal = "você perdeu!"
 
     else:
@@ -41,7 +41,7 @@ while (progranaOn):
     print("Em qual posição quer alocar o OSSO?")
     k = int(input())
 
-    if k == 1:
+    if k == 1: # Apenas essa restrição para o osso
         frasefinal = "você passou para proxima fase!\n"
     else:
         frasefinal = "você perdeu!"
@@ -65,7 +65,7 @@ while (progranaOn):
     print("Em qual posição quer alocar o OSSO?")
     k = int(input())
 
-    if i == 7 and j == 1 and k == 5:
+    if i == 7 and j == 1 and k == 5: # Única combinação possível
         frasefinal = "você passou para proxima fase!"
     else:
         frasefinal = "você perdeu!"
@@ -89,7 +89,7 @@ while (progranaOn):
     print("Em qual posição quer alocar o OSSO?")
     k = int(input())
 
-    if k == 2:
+    if k == 2: # Única restrição possível
         frasefinal = "você passou para proxima fase!\n"
     else:
         frasefinal = "você perdeu!"
@@ -100,3 +100,5 @@ while (progranaOn):
         break;
     else:
         print("vocÊ ganhou!")
+        progranaOn = False
+        break;

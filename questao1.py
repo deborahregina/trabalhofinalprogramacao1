@@ -1,11 +1,11 @@
 opcao = 1
 
 
-def imprimirinfos(nomeCrianca, idadeCrianca, grauInstrucao):
+def imprimirinfos(nomeCrianca, idadeCrianca, grauInstrucao):    # método para imprimir infos do aluno
     print('A criança ' + nomeCrianca + ' tem ' + idadeCrianca + ' anos e está em ' + grauInstrucao)
 
 
-while opcao != '0':
+while opcao != '0':     # Roda instruções até que pessoa escolha não continuar
     nomeCrianca = input('Nome da criança: ')
     idadeCrianca = int(input('Idade da criança: '))
     if (idadeCrianca < 1):

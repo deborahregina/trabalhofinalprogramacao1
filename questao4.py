@@ -1,9 +1,8 @@
 from random import seed
 from random import randint
 
-listaalunos = []
 
-def menuNovaInscricao():
+def menuNovaInscricao():                # definindo funções para usar no menu principal
     nome = input("Digite seu nome: ")
     email = input("Digite email: ")
     telefone = input("Digite telefone: ")
@@ -45,5 +44,5 @@ def menuPrincipal():
             print("Erro: digite uma opção válida!")
 
 
-listaalunos = []
+listaalunos = [] # variável global no prog principal
 menuPrincipal();
